@@ -28,10 +28,23 @@ Benefits:
 
 With DoToday, taking control of your daily tasks and notes becomes a seamless experience. Enhance your productivity, reduce clutter, and stay on top of your commitments with this all-in-one task management and note-taking solution.
 
+Screenshots of my Project:
+
+HomePage:
+
 ![DoTodayHome](https://github.com/chandhu2102/DoToday/assets/93365365/050ab119-f81d-45a6-a600-062fc0285aaa)
+
+Add Notes:
+
 ![AddNotes](https://github.com/chandhu2102/DoToday/assets/93365365/635b2c04-bd00-4c53-81e1-f0b0f27627ae)
 ![AddNotes (2)](https://github.com/chandhu2102/DoToday/assets/93365365/567f148d-bf37-4262-a71c-280e85deeaa2)
+
+ Check Saved Notes:
+ 
 ![SavedNotes](https://github.com/chandhu2102/DoToday/assets/93365365/5809c537-13bb-417c-8204-6b62012bac8d)
+
+Check Task Status:
+
 ![CheckStatus](https://github.com/chandhu2102/DoToday/assets/93365365/e1806682-ca17-43e4-95f3-2df7f61e2382)
 
 
