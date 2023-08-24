@@ -1,0 +1,96 @@
+/* ... Your existing CSS ... */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/todo.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Adjust to your preference */
+   
+  }
+  h1 {
+    color: white; 
+    text-align:center;/* Set the color for the main heading */
+}
+  
+.saved-notes-tasks-container {
+    text-align: center;
+    padding: 20px;
+    color: black;
+  }
+  
+  .saved-notes-tasks {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .saved-notes-tasks h1 {
+    margin-top: 20px;
+  }
+  
+  .saved-notes-tasks .tasks,
+  .saved-notes-tasks .notes {
+    width: 45%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .saved-notes-tasks .tasks {
+    margin-right: 10px;
+  }
+  
+  .saved-notes-tasks .notes {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .saved-notes-tasks {
+      flex-direction: column;
+    }
+    
+    .saved-notes-tasks .tasks,
+    .saved-notes-tasks .notes {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* ... Your existing CSS ... */
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .notes-item {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+  }
+  
+  .arrow-button {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .arrow-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Add hover effect */
+  .arrow-button:hover {
+    background-color: #ddd;
+  }
+  

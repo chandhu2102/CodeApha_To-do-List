@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/todo.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Adjust to your preference */
+ 
+  }
+  h1 {
+    color: white; /* Set the color for the main heading */
+}
+
+  
+  .task-status-container {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 600px;
+    color:black;
+  }
+  
+  #taskStatusBars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-status-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .task-status-label {
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .task-status-fill {
+    flex: 1;
+    height: 20px;
+    background-color: #4caf50;
+  }
+  
+  /* Adjust bar appearance as needed */
+  

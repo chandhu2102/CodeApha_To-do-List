@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        
+        <div class="menu-items">
+          <li><a href="#">Mark All Completed</a></li>
+          <li><a href="#savedNotes">Saved Notes</a></li>
+          <!-- ... Your existing menu items ... -->
+<li><a href="#showStatus">Show Task Status</a></li>
+
+         
+        </div>
+        <div class="mode-toggle">
+          <button class="toggle-button"  class="glow-on-hover" id="toggleButton"></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>DoToday <img src="https://img.icons8.com/?size=100&id=49487&format=png" width=40 height=40></h1>
+    <div class="task-input-container">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <button class="glow-on-hover" id="addTaskButton">Add</button>
+    </div>
+    <div class="button-container">
+      <button  class="glow-on-hover"  data-status="completed">Completed</button>
+      <button  class="glow-on-hover"  data-status="should-be-done">In Progress</button>
+    </div>
+    <ul id="taskList">
+      
+      <!-- Task items will be added dynamically here -->
+    </ul>
+  </div>
+  <div id="notesPopup" class="notes-popup">
+    <div class="notes-popup-content">
+      <span id="closeNotesPopup" class="close-notes-popup">&times;</span>
+      <div class="notes-input">
+        <label for="popupNotesTextarea"><i class="pen-icon">✏️</i>Write something:</label>
+        <textarea id="popupNotesTextarea" class="popup-notes-textarea" placeholder="Write something..." rows="4"></textarea>
+        <button id="savePopupNotesButton"  class="glow-on-hover" class="save-popup-notes-button">Save Notes</button>
+      </div>
+    </div>
+  </div>
+  
+  <section id="savedNotes" class="saved-notes">
+    
+    <ul id="savedNotesList"></ul>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

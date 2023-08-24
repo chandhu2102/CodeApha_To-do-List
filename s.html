@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes Container with Save</title>
+  <style>
+    /* Styles for the notes container */
+    .notes-container {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notes Container Example with Save</h1>
+
+  <!-- Icon to open notes container -->
+  <div class="notes-icon" id="openNotesIcon">
+    <img src="notes-icon.png" alt="Notes" width="24" height="24">
+  </div>
+
+  <!-- Notes container -->
+  <div class="notes-container" id="notesContainer">
+    <textarea id="notesTextarea" placeholder="Add your notes..."></textarea>
+    <button id="saveNotesButton">Save Notes</button>
+  </div>
+
+  <script>
+    const openNotesIcon = document.getElementById('openNotesIcon');
+    const notesContainer = document.getElementById('notesContainer');
+    const notesTextarea = document.getElementById('notesTextarea');
+    const saveNotesButton = document.getElementById('saveNotesButton');
+
+    openNotesIcon.addEventListener('click', () => {
+      notesContainer.style.display = 'block';
+    });
+
+    saveNotesButton.addEventListener('click', () => {
+      const notesText = notesTextarea.value;
+      // You can save the notesText using your preferred method (localStorage, database, etc.)
+      console.log('Notes saved:', notesText);
+      // Reset the textarea and hide the container
+      notesTextarea.value = '';
+      notesContainer.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
+
